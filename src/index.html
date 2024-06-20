@@ -1,17 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guns.md</title>
-    <link rel="stylesheet" href="scss/normalize.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="js/script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+        html,
+        body {
+            font-family: "Arimo", sans-serif;
+            position: relative;
+            height: 100%;
+        }
+        .swiper {
+            width: 100%;
+            height:auto;
+        }
+        .swiper-wrapper::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(47, 46, 46, 0.5);
+            top: 0;
+            left: 0;
+        }
+        .bg-two::after{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .bg-three::after{
+            background-color:  rgba(247, 99, 12, 0.34);
+        }
+        .swiper-slide {
+            display: block;
+        }
+        .swiper-one_text-first,
+        .swiper-one_text-second{
+            color: rgb(255, 255, 255);
+            font-style:italic;
+            font-weight: 700;
+            position: absolute;
+            z-index: 2;
+        }
+        .swiper-one_text-first{
+            font-size: 2.5vw;
+            left: 19vw;
+            top: 2vw;
+        }
+        .swiper-one_text-second{
+            left: 30vw;
+            top: 24vw;
+            font-size: 4vw;
+        }
+        .swiper-two_text-first,
+        .swiper-two_text-second{
+            color: rgb(255, 255, 255);
+            position: absolute;
+            z-index: 2;
+        }
+        .swiper-two_text-first{
+            width: 60%;
+            font-size: 2vw;
+            left: 19vw;
+            top: 2vw;
+        }
+        .swiper-two_text-second{
+            width: 50%;
+            left: 31vw;
+            top: 30vw;
+            font-size: 1.4vw;
+            text-align:right;
+            letter-spacing: 0.2px;
+        }
+        .swiper-three_text-first,
+        .swiper-three_text-second{
+            position: absolute;
+            z-index: 2;
+        }
+        .swiper-three_text-first{
+            text-align: center;
+            font-size: 1.6vw;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.6);
+            color: black;
+            left: 22vw;
+            top: 3vw;
+            width: 40%;
+            padding: 1.8vw 6vw;
+        }
+        .swiper-three_text-second{
+            color: rgb(255, 255, 255);
+            width: 50%;
+            left: 19vw;
+            top: 21vw;
+            font-size: 1.3vw;
+        }
+        .swiper-head{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+            color: white;
+        }
+        .swiper-pagination-bullet-active{
+            background:#fff;
+        }
+        .swiper-pagination-bullet{
+            border: 2px solid white;
+            background:#ffffff00;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Guns.md</h1>
+    <section class='swiper mySwiper '>
+        <div class='swiper-wrapper'>
+            <img class='swiper-slide' src='./slide1.png' alt='slide1'>
+            <p class='swiper-one_text-first'>5.11 TACTICAL</p>
+            <h1 class='swiper-one_text-second'>ALWAYS BE READY</h1>
+            <div class='swiper-slide'>Slide 2</div>
+            <div class='swiper-slide'>Slide 3</div>
+        </div>
+        <div class='swiper-button-next'></div>
+        <div class='swiper-button-prev'></div>
+        <div class='swiper-pagination'></div>
+    </section>
+    <section>
+        <h2 class='swiper-head'>ДЛЯ ВЛАДЕЛЬЦЕВ ОРУЖИЯ</h2>
+        <div class='swiper mySwiper'>
+            <div class='swiper-wrapper bg-two'>
+                <img class='swiper-slide' src='./slide2.png' alt='slide1'>
+                <h3 class='swiper-two_text-first'>ЧТО ИЗМЕНИЛОСЬ В ЗАКОНЕ ОБ ОРУЖИИ С 15 ИЮЛЯ 2023 ГОДА</h3>
+                <p class='swiper-two_text-second'>На ношение и применение охотничьего оружия вводится новый образец разрешения. Документ позволяет лицу, которому владелец передал ружье...</p>
+                <div class='swiper-slide'>Slide 2</div>
+                <div class='swiper-slide'>Slide 3</div>
+            </div>
+            <div class='swiper-button-next'></div>
+            <div class='swiper-button-prev'></div>
+            <div class='swiper-pagination'></div>
+        </div>
+    </section> 
+    <section>
+        <h2 class='swiper-head'>МЕРОПРИЯТИЯ</h2>
+        <div class='swiper mySwiper'>
+            <div class='swiper-wrapper bg-three'>
+                <img class='swiper-slide' src='./slide3.png' alt='slide1'>
+                <p class='swiper-three_text-first'>КОНКУРС СТРЕЛЬБЫ ИЗ АВТОМАТОВ<br /> Г. ЧЕБОКСАРЫ<br /> 31 ИЮЛЯ 2024 ГОДА</p>
+                <p class='swiper-three_text-second'>Мероприятие пройдёт на природе летом в г. Чебоксары.<br /> Стрельба из различных видов автоматов. Мероприятие на выезде. <br />Мероприятие пройдёт на природе летом на свежем воздухе.</p>
+                <div class='swiper-slide'>Slide 2</div>
+                <div class='swiper-slide'>Slide 3</div>
+            </div>
+            <div class='swiper-button-next'></div>
+            <div class='swiper-button-prev'></div>
+            <div class='swiper-pagination'></div>
+        </div>
+    </section> 
 
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+    <script>
+        let swiper = new Swiper('.mySwiper', {
+            cssMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            mousewheel: true,
+            keyboard: true,
+        })
+    </script>
 </body>
 
 </html>
