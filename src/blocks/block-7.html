@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Международные достижения</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .achievements-container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .achievements-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .achievements-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .achievement {
+        display: flex;
+        flex-direction: column;
+        background-color: #4f4c4cd9;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      .achievement-image {
+        width: 100%;
+        flex-shrink: 0;
+      }
+
+      .achievement-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .achievement-info {
+        padding: 20px;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .achievement-info h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .achievement-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: 768px) {
+        .achievements-block {
+          flex-direction: column;
+        }
+
+        .achievement {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .achievement:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+
+        .achievement-image {
+          width: 50%;
+        }
+
+        .achievement-info {
+          width: 50%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="achievements-container">
+      <h1 class="achievements-title">МЕЖДУНАРОДНЫЕ ДОСТИЖЕНИЯ</h1>
+      <div class="achievements-block">
+        <div class="achievement">
+          <div class="achievement-image">
+            <img
+              src="/src/assets/img/98b821ba51ae045e64b0b1b8e1bc60c9.jpg"
+              alt="Соревнования в г. Чунцин"
+            />
+          </div>
+          <div class="achievement-info">
+            <h2>СОРЕВНОВАНИЯ В Г. ЧУНЦИН ЧЕМПИОНАТ II-III СТЕПЕНИ</h2>
+            <p>
+              С другой стороны начало повседневной работы по формированию
+              позиции способствует подготовке и реализации дальнейших
+              направлений развития.
+            </p>
+            <p>
+              Разнообразный и богатый опыт начало повседневной работы по
+              формированию позиции позволяет.
+            </p>
+            <p>
+              Оценить значение системы обучения кадров, соответствует насущным
+              потребностям, а также тому и сему.
+            </p>
+          </div>
+        </div>
+        <div class="achievement">
+          <div class="achievement-image">
+            <img
+              src="/src/assets/img/158eb5d7bd893daba1235b5fe3569c62.jpg"
+              alt="Международный турнир по стрельбе из пистолета"
+            />
+          </div>
+          <div class="achievement-info">
+            <h2>МЕЖДУНАРОДНЫЙ ТУРНИР ПО СТРЕЛЬБЕ ИЗ ПИСТОЛЕТА</h2>
+            <p>
+              С другой стороны начало повседневной работы по формированию
+              позиции способствует подготовке и реализации дальнейших
+              направлений развития.
+            </p>
+            <p>
+              Разнообразный и богатый опыт начало повседневной работы по
+              формированию позиции позволяет.
+            </p>
+            <p>
+              Оценить значение системы обучения кадров, соответствует насущным
+              потребностям, а также тому и сему.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
