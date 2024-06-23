@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин 5.11 Tactical</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .store-container {
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .store-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .store-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch; /* Позволяет блокам растягиваться на одинаковую высоту */
+      }
+
+      .store-image {
+        flex: 1;
+        max-width: 50%;
+        display: flex; /* Добавлено для растяжения изображения */
+      }
+
+      .store-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .store-info {
+        flex: 1;
+        max-width: 50%;
+        background-color: #4f4c4cd9;
+        color: #ffffff;
+        padding: 20px;
+        text-align: left;
+        box-sizing: border-box;
+      }
+
+      .store-info a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .store-info a:hover {
+        text-decoration: none;
+        color: #ff6600; /* Изменение цвета текста при наведении */
+      }
+
+      .info-label {
+        color: #ff6600;
+      }
+
+      .store-button {
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .store-button:hover {
+        background-color: #333333;
+      }
+
+      .button-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #ff6600;
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 768px) {
+        .store-block {
+          flex-direction: column;
+        }
+
+        .store-image,
+        .store-info {
+          max-width: 100%;
+        }
+
+        .store-info {
+          text-align: center;
+        }
+
+        .store-button {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="store-container">
+      <h1 class="store-title">МАГАЗИН 5.11 TACTICAL</h1>
+      <div class="store-block">
+        <div class="store-image">
+          <img
+            src="/src/assets/img/97527965-5d18-43b9-87f2-a914db489626 1.jpg"
+            alt="Магазин 5.11 Tactical"
+          />
+        </div>
+        <div class="store-info">
+          <p>
+            <span class="info-label"
+              ><img
+                src="/src/assets/img/location-point.svg"
+                alt=""
+              />АДРЕС:</span
+            >
+            <a
+              href="https://www.google.com/maps?q=CHISINAU, STR. ALEXEI SCIUSEV 64"
+              target="_blank"
+              >CHISINAU, STR. ALEXEI SCIUSEV 64</a
+            >
+          </p>
+          <p>
+            <span class="info-label">ТЕЛЕФОН:</span>
+            <a href="tel:+37362110511">+373 62 110 511</a>
+          </p>
+          <p>
+            <span class="info-label">EMAIL:</span>
+            <a href="mailto:tactical511@gmail.com">TACTICAL511@GMAIL.COM</a>
+          </p>
+          <button class="store-button">
+            <span class="button-icon">+</span> ПОСМОТРЕТЬ
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
